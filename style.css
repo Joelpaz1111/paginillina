@@ -416,10 +416,6 @@ a:hover {
         font-size: 18px;
     }
 }
-/* =========================
-   PORTADA
-========================= */
-
 .portada {
     position: relative;
     width: 100%;
@@ -430,14 +426,11 @@ a:hover {
     box-shadow: none;
     border-radius: 0;
 }
-
 .portada img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-
-    /* Oscurece la imagen */
     filter: brightness(35%) grayscale(30%);
 }
 
@@ -474,4 +467,36 @@ a:hover {
     text-transform: uppercase;
 
     text-shadow: 0 0 10px black;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: #aaa;
+    margin: -10px 0 15px;
+    font-weight: normal;
+}
+
+.card p {
+    color: #ddd;
+    text-align: justify;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e00000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #e00000;
+    color: white;
 }
