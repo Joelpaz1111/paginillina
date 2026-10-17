@@ -500,3 +500,213 @@ a:hover {
     background: #e00000;
     color: white;
 }
+/* PORTADA MEJORADA */
+
+.portada {
+    height: min(650px, 85vh);
+    min-height: 400px;
+}
+
+.portada img {
+    object-position: center 40%;
+}
+
+.portada-texto h1 {
+    font-size: clamp(2.3rem, 8vw, 6rem);
+    letter-spacing: clamp(2px, 1vw, 9px);
+}
+
+.portada-texto p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+    letter-spacing: clamp(1px, 0.5vw, 5px);
+}
+
+/* BOTON DE LA PORTADA */
+
+#botonCambiar {
+    background: transparent;
+    color: white;
+    border: 1px solid #e00000;
+    border-radius: 4px;
+    padding: 12px 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#botonCambiar:hover {
+    background: #e00000;
+    box-shadow: 0 0 18px rgba(224, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+/* TARJETAS DE ARTISTAS Y GENEROS */
+
+.seccion-cards {
+    width: 100%;
+    padding: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.card {
+    min-width: 0;
+}
+
+.card img {
+    display: block;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .seccion-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .seccion-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .portada {
+        min-height: 380px;
+    }
+
+    .portada-texto {
+        width: 94%;
+    }
+
+    .Menu {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .Menu table {
+        width: 100%;
+    }
+
+    #Bandas table {
+        min-width: 600px;
+    }
+
+    .carousel-slides {
+        height: 470px;
+    }
+
+    .carousel-caption {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .slide {
+        padding: 20px 12px;
+    }
+}
+/* SECCION: IMPACTO DEL ROCK NACIONAL */
+
+.seccion-impacto {
+    padding: 60px 8%;
+    background-color: #0b0b0c;
+    color: #f2f2f2;
+}
+
+.seccion-impacto > h2 {
+    color: #e63946;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.impacto-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #bdbdbd;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.impacto-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.impacto-card {
+    background-color: #151518;
+    border: 1px solid #29292d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.impacto-card:hover {
+    transform: translateY(-5px);
+    border-color: #e63946;
+}
+
+.impacto-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    filter: grayscale(35%);
+    transition: filter 0.3s ease;
+}
+
+.impacto-card:hover img {
+    filter: grayscale(0%);
+}
+
+.impacto-contenido {
+    padding: 24px;
+}
+
+.impacto-numero {
+    color: #e63946;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.impacto-card h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+.impacto-card p {
+    color: #bdbdbd;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 768px) {
+    .seccion-impacto {
+        padding: 40px 5%;
+    }
+
+    .seccion-impacto > h2 {
+        font-size: 1.7rem;
+    }
+
+    .impacto-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .impacto-card img {
+        height: 210px;
+    }
+}
