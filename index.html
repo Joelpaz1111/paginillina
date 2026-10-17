@@ -2,7 +2,7 @@
 <html lang="esp">
 <head>
     <meta charset="UTF-8">
-    <meta name="view port" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Rock Nacional</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -14,18 +14,15 @@
 
     <div class="portada-texto">
         <h1>ROCK NACIONAL</h1>
-        <p>Mas que musica, una identidad</p>
+        <p id="eslogan">Mas que musica, una identidad</p>
+        <button id="botonCambiar">Cambiar Eslogan</button>
     </div>
-
     </header>
-    <!--CAMBIAR DE CONTENIDO DE UN BOTON-->
-    <button id="botonCambiar">Cambiar de texto</button>
-    <!--CAMBIAR DE CONTENIDO DE UN BOTON-->
     <table width="100%" bgcolor="black" cellpadding="15" class="Menu">
      <tr align="center">
         <td><a href="#Historia"><font color="red">HISTORIA</font></a></td>
         <td><a href="#Decadas"><font color="red">DECADAS</font></a></td>
-        <td><a href="#Pioneros del Rock"><font color="red">PIONEROS</font></a></td>
+        <td><a href="#impacto"><font color="red">IMPACTO</font></a></td>
         <td><a href="#Albums"><font color="red">ÁLBUMES</font></a></td>
         <td><a href="#Bandas"><font color="red">BANDAS</font></a></td>
         <td><a href="#Artistas"><font color="red">ARTISTAS</font></a></td>
@@ -60,18 +57,76 @@
         <li><strong>1985:</strong> en adelante: El rock nacional llena estadios con figuras como Patricio Rey y sus Redonditos de Ricota y Sumo.</li>
      </ul>
     </section>
-    <section id="Pioneros del Rock" class="Pioneross seccion-gris"> <h1 style="color: rgb(255, 0, 0);">Los Pioneros del Rock Nacional</h1>
-     <p>El rock argentino o rock nacional cuenta con figuras fundamentales que marcaron la historia de la música en español, destacando artistas solistas y bandas legendarias como Charly García, Luis Alberto Spinetta, Gustavo Cerati, Fito Páez, y grupos como Soda Stereo, virus, Sumo y Patricio Rey y sus Redonditos de Ricota.</p>
-     <figure> 
-     <figcaption class="albumsss"><strong style="color: rgb(255, 0, 0);">Soda Stereo</strong></figcaption>
-     <img src="https://s3-us-west-1.amazonaws.com/peermusic-web-content/images/Lg/2499ad6f-5bdc-4321-9311-924814ea4e5e.jpg" alt="Soda Stereo" width="500">
-     </figure>    
-     <br><a href="https://es.wikipedia.org/wiki/Soda_Stereo">Historia de Soda Stereo</a>
-     <figure>
-     <figcaption class="albumsss"><strong style="color: rgb(255, 0, 0);">Virus</strong></figcaption>
-     <img src="https://www.laizquierdadiario.com/IMG/jpg/virus_portada_disco_locura.jpg" alt="Virus banda argentina" width="500">
-     </figure> 
-     <br> <a href="https://es.wikipedia.org/wiki/Virus_(banda)">Historia de Virus</a>
+   <section id="impacto" class="seccion-impacto">
+    <h1>El impacto del rock nacional</h1>
+    <p class="impacto-intro">
+        El rock nacional fue mucho más que música:
+        representó una forma de expresión, una identidad
+        cultural y una parte importante de la historia argentina.
+    </p>
+    <div class="impacto-grid">
+        <article class="impacto-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW3M3FMECGc1vbj3R6_UREWCvdG2NPiMUDupHKdfiEW0DcMqgRE8psJGxB&s=10"alt="Charly García, referente del rock argentino"loading="lazy">
+            <div class="impacto-contenido">
+                <span class="impacto-numero">01</span>
+                <h3>Una voz para los jóvenes</h3>
+                <p>
+                    El rock nacional construyó una identidad propia
+                    entre los jóvenes argentinos. Sus canciones
+                    hablaban de libertad, sentimientos e inconformismo.
+                </p>
+            </div>
+        </article>
+        <article class="impacto-card">
+            <img
+                src="https://media.sitioandino.com.ar/p/175c4778b14b63cbebdc044951bb0746/adjuntos/335/imagenes/000/744/0000744041/790x0/smart/soda-stereojpg.jpg"    alt="León Gieco, músico argentino"loading="lazy">
+            <div class="impacto-contenido">
+                <span class="impacto-numero">02</span>
+                <h3>Rock durante la dictadura</h3>
+                <p>
+                    Durante la última dictadura militar (1976-1983),
+                    la censura y la represión condicionaron la expresión
+                    artística. El rock fue un espacio de identificación
+                    y expresión para muchos jóvenes.
+                </p>
+            </div>
+        </article>
+        <article class="impacto-card">
+            <img
+                src="https://revistarandom.com.ar/wp-content/uploads/2026/04/1648843185-malvinasb-1200x519-1.jpg"
+                alt="Imagen histórica relacionada con la Guerra de Malvinas"
+                loading="lazy"
+            >
+            <div class="impacto-contenido">
+                <span class="impacto-numero">03</span>
+                <h3>Malvinas y la música</h3>
+                <p>
+                    En 1982, la prohibición de difundir música en inglés
+                    en las radios impulsó la presencia del rock nacional.
+                    El Festival de la Solidaridad Latinoamericana fue
+                    uno de los acontecimientos destacados de esa época.
+                </p>
+            </div>
+        </article>
+        <article class="impacto-card">
+            <img
+                src="https://revistaaplanadora.wordpress.com/wp-content/uploads/2021/11/bf14f45553aa4eaa8c2c350ce4002a74.jpg"
+                alt="Soda Stereo, banda argentina de rock"
+                loading="lazy"
+            >
+            <div class="impacto-contenido">
+                <span class="impacto-numero">04</span>
+                <h3>Una identidad sin fronteras</h3>
+                <p>
+                    Con el regreso de la democracia y durante las décadas
+                    siguientes, el rock argentino amplió sus estilos y
+                    llegó a otros países de Latinoamérica, influyendo
+                    en distintas generaciones.
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
     <!-- <h2 style="color: rgb(255, 0, 0);" class="centrados">Tambien podemos encontrar bandas reconocidas como:</h2> -->
     <!-- <ul> -->
         <!-- <li><a href="https://es.wikipedia.org/wiki/Sumo_(banda)">SUMO</a></li> -->
@@ -109,8 +164,7 @@
              </a>
              </p>
            </div>
-        </div>
-          
+        </div>   
         <div class="slide">
            <h3>Oktubre</h3>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThUq73hX9WT9LxL-ePeLcZPpJ_vL8n1C-RDQmiaX8Vk2eNyR6XwHhWx0Q&s=10" alt="Oktubre" width="250">
