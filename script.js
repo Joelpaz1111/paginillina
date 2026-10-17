@@ -1,5 +1,4 @@
 //Botones de ver mas y ver menos
-//Botones de ver mas y ver menos
 const botonesVerMas = document.querySelectorAll(`.btn-ver-mas`);
 
 function alternarInformacion(event) {
@@ -114,6 +113,3 @@ function prevSlide() {
 
 if (nextBtn) nextBtn.addEventListener('click', nextSLide);
 if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-//DISMINUIR Y AUMENTAR TEXTO
-
-//CAROUSEL DE FOTOS
