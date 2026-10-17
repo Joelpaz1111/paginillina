@@ -22,18 +22,18 @@ botonesVerMas.forEach(function(boton){
 
 //CAMBIAR CONTENIDO DE UN BOTON
 const boton = document.getElementById("botonCambiar");
-const titulillo = document.getElementById("titulo");
-let contador = 0;
-boton.addEventListener("click",function() {
-    contador++;
-    if (contador===1) {
-        titulo.textContent = "Bienvenidos";
-    } else if (contador===2){
-        titulo.textContent = "uwu";
-    } else if (contador===3){
-        titulo.textContent = "xdxd";
-    }
+const titulillo = document.getElementById("eslogan");
+const frases = [
+    "MAS QUE MUSICA UNA IDENTIDAD",
+    "HISTORIAS QUE SE HICIERON CANCIONES",
+    "UN PAIS, MILES DE VOCES"
+];
+let indiceFrase = 0;
+boton.addEventListener("click", function() {
+    indiceFrase = (indiceFrase + 1) % frases.length;
+    eslogan.textContent = frases[indiceFrase];
 });
+//wsgsdgsdgsdgsdg
 //CAMBIAR CONTENIDO DE UN BOTON
 
 //VOLVER ARRIBA
@@ -113,3 +113,5 @@ function prevSlide() {
 
 if (nextBtn) nextBtn.addEventListener('click', nextSLide);
 if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+//CAROUSEL DE FOTOS
+    
